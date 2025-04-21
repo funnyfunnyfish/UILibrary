@@ -1,13 +1,13 @@
 //made by carter
 console.consoleOverlay.consoleDisplay(true)
 
-// browserEvents.MouseLeft.onEvent(browserEvents.MouseButtonEvent.Pressed, function(x: number, y: number) {
-//     for (let item of uiElements) {
-//         if (item.boundingBox.IsPositionInBoundingBox(x, y)) {
-//             item.OnClick()
-//         }
-//     }
-// })
+browserEvents.MouseLeft.onEvent(browserEvents.MouseButtonEvent.Pressed, function(x: number, y: number) {
+    for (let item of uiElements) {
+        if (item.boundingBox.IsPositionInBoundingBox(x, y)) {
+            item.OnClick()
+        }
+    }
+})
 
 class UIPage {
     static instances: UIPage[] = []
